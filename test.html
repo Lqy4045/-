@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1,minimum-scale=0.5,maximum-scale=2,user-scalable=yes" />
+    <title>Document</title>
+  </head>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      border: 1px solid #000;
+      width: 1rem;
+      height: 100px;
+    }
+  </style>
+  <body>
+    <div class="box"></div>
+    <script>
+      const WIDTH = 750 //设计稿尺寸
+      const setView = () => {
+        document.documentElement.style.fontSize = (100 * screen.width) / WIDTH + 'px'
+      }
+      window.onorientationchange = setView
+      setView()
+    </script>
+  </body>
+</html>
