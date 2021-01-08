@@ -40,6 +40,8 @@
   切换分支
 - git branch -d 分支名
   删除分支
+- git push origin --delete 分支名
+  删除远程分支
 
 > 查询操作
 
