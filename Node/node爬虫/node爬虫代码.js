@@ -31,9 +31,8 @@ function fomatDate(html) {
     if (err) {
       writeFile(data)
     } else {
-      emptyDir('./data').then(res => {
-        fs.rmdir('./data', err => {})
-      })
+      emptyDir('./data')
+      fs.rmdir('./data', err => {})
     }
   })
 }
